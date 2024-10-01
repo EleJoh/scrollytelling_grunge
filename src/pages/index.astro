@@ -1,9 +1,79 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Button from '../components/Button.astro';
+import Button from "../components/Button.astro";
+import { Image } from "astro:assets";
+import koncert from "../assets/images/rock_koncert.jpg";
+import foto from "../assets/images/not_dead.jpg";
+import hero from "../assets/images/hero_grunge.jpg";
 ---
-<MainLayout title="Titel">
-	<article>
-		<p>Index indhold</p>
-	</article>
+
+<MainLayout
+  title="Grunge: En Rå Revolution i Musikken"
+  description="Lær om grunge-genren, dens oprindelse i Seattle, og hvordan bands som Nirvana og Pearl Jam ændrede rockmusik i 1990'erne."
+  ogTitle="Grunge: En Rå Revolution i Musikken"
+  ogDescription="Dyk ned i historien om grunge-genren og dens indflydelse på musikken i 1990'erne. Fra Seattles musikscene til Nirvanas verdensomspændende succes."
+>
+  <article class="grid mx-auto container gap-8 pt-8 prose">
+    <h1>Grunge: En Rå Revolution i Musikken</h1>
+    <Image src={hero} alt="collage af billeder af rock concert" />
+    <p>
+      Grunge, en genre der opstod i det nordvestlige USA i slutningen af 1980'erne, var mere end blot en lyd – det var en kulturel bevægelse, der ændrede rockmusikken og moden i 1990'erne. Med sit rå, upolerede udtryk og følelsesladede tekster var
+      grunge en rebelsk reaktion på de glitrende pop- og glamrock-bands fra 80'erne. Her er fem nøglepunkter og interessante fakta om denne ikoniske genre:
+    </p>
+    <Image src={koncert} alt="billede af rock koncert" />
+    <p>Photo by Sebastian Ervi: https://www.pexels.com/photo/people-in-concert-1763075/</p>
+    <hr />
+    <h2>1. Fødestedet: Seattles Underground Musikscene</h2>
+
+    <p>
+      Grunge opstod i Seattle, Washington, hvor uafhængige pladeselskaber som Sub Pop begyndte at udgive musik fra lokale bands i midten af 1980'erne. Byens regnfulde og dystre stemning siges ofte at have påvirket de melankolske og indadvendte
+      temaer, der præger grunge-musikken. Bands som Green River og Melvins lagde grundstenen for de senere stjerner i genren.
+    </p>
+
+    <hr />
+
+    <h2>2. En Fusion af Punk og Metal</h2>
+
+    <p>
+      Grunge beskrives bedst som en fusion af punkrock'ens energi og attitude med den tunge, riff-baserede lyd fra heavy metal. Med fokus på forvrængede guitarer, langsomme tempoer og en "beskidt" lyd, skabte grunge en stærk kontrast til den
+      polerede, overproducerede rock, der dominerede tiden. Bands som Soundgarden bragte den tunge metal-inspiration ind, mens Nirvana tilføjede punkens enkelhed og gør-det-selv-ånd.
+    </p>
+
+    <hr />
+
+    <h2>3. Nirvanas Nevermind Ændrede Alt</h2>
+
+    <p>
+      Et af de mest definerende øjeblikke for genren kom i 1991 med udgivelsen af Nirvanas album Nevermind. Singlen "Smells Like Teen Spirit" blev en generationshymne, og førte grunge ind i mainstreamen, hvilket markerede glam-metallens nedgang.
+      Nevermind røg hurtigt til tops på hitlisterne og solgte mere end 30 millioner eksemplarer verden over, hvilket også åbnede dørene for bands som Pearl Jam, Alice in Chains og Stone Temple Pilots.
+    </p>
+
+    <hr />
+    <h2>4. Grunge Æstetik: Mode og Attitude</h2>
+
+    <p>
+      Grunge handlede ikke kun om musik; det var en erklæring mod 80'ernes overdrevne forbrug og glamour. Moden forbundet med grunge var tydeligt anti-glamour og bestod af flannelskjorter, revne jeans, militærstøvler og pjusket hår. Dette afslappede
+      og sjuskede look var en bevidst afvisning af de glitrende, polerede rockstjerner fra tidligere årtier. Grunge-æstetikken blev et kulturelt fænomen, der symboliserede Generation X's angst og desillusion.
+    </p>
+    <div class="grid grid-cols-2 gap-4"></div>
+    <hr />
+    <h2>5. Grungens Fald og Vedvarende Indflydelse</h2>
+
+    <p>
+      Selvom genren toppede i begyndelsen af 90'erne, bidrog tragiske dødsfald blandt nøglefigurer, herunder Kurt Cobain i 1994, til grungens nedgang. Da årtiet skred frem, mistede genren sin mainstreampopularitet, men dens indflydelse fortsatte.
+      Grungens rå følelser og lyd banede vejen for senere alternative bands og post-grunge-bands som Foo Fighters, Bush og Silverchair. Selv i dag kan grungens indflydelse stadig høres i moderne rockmusik.
+    </p>
+
+    <hr />
+    <p>
+      Grunge var mere end blot en musikstil — det fangede ånden fra en hel æra og definerede 90'ernes oprørske og indadvendte holdninger. Selvom genren havde sin storhedstid i relativt kort tid, lever dens indflydelse på rockmusikken, moden og
+      kulturen videre den dag i dag.
+    </p>
+    <Image src={foto} alt="foto af tekst på væggen" />
+    <p>
+      Photo by <a href="https://unsplash.com/@joseantoniogall?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jose Antonio Gallego Vázquez</a> on <a
+        href="https://unsplash.com/photos/grunge-not-dead-signage-wallpaper-oTy2TfgAVAc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a
+      >
+    </p>
+  </article>
 </MainLayout>
